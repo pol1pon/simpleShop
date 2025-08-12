@@ -19,7 +19,9 @@ module.exports = {
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE
-      }
+      },
+      onDelete: 'cascade',
+      type: Sequelize.INTEGER,
     });
   },
   async down(queryInterface, Sequelize) {

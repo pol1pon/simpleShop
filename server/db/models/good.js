@@ -9,10 +9,22 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Good.init({
-    title: DataTypes.TEXT,
-    description: DataTypes.TEXT,
-    image: DataTypes.TEXT,
-    price: DataTypes.INTEGER
+    title: {
+      allowNull: false,
+      type: DataTypes.TEXT
+    },
+    description: {
+      allowNull: false,
+      type: DataTypes.TEXT
+    },
+    image: {
+      allowNull: false,
+      type: DataTypes.TEXT
+    },
+    price: {
+      allowNull: false,
+      type: DataTypes.INTEGER
+    },
   }, {
     sequelize,
     modelName: 'Good',

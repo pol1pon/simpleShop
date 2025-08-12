@@ -9,9 +9,17 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   User.init({
-    email: DataTypes.TEXT,
-    password: DataTypes.TEXT,
-    card: DataTypes.INTEGER
+    email: {
+      allowNull: false,
+      type: DataTypes.TEXT
+    },
+    password: {
+      allowNull: false,
+      type: DataTypes.TEXT
+    },
+    card: {
+      type: DataTypes.INTEGER
+    }
   }, {
     sequelize,
     modelName: 'User',

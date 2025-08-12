@@ -10,7 +10,9 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Card.init({
-    goodId: DataTypes.INTEGER
+    goodId: {
+      type: DataTypes.INTEGER
+    },
   }, {
     sequelize,
     modelName: 'Card',

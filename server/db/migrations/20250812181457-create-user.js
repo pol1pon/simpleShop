@@ -10,9 +10,11 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       email: {
+        allowNull: false,
         type: Sequelize.TEXT
       },
       password: {
+        allowNull: false,
         type: Sequelize.TEXT
       },
       card: {
