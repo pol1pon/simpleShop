@@ -26,7 +26,6 @@ module.exports = {
         defaultValue: new Date(),
         type: Sequelize.DATE
       },
-      onDelete: 'cascade',
       type: Sequelize.INTEGER,
     });
   },
