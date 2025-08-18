@@ -18,6 +18,11 @@ module.exports = {
         type: Sequelize.TEXT
       },
       card: {
+
+        references: {
+          key: 'id',
+          model: 'Cards'
+        },
         type: Sequelize.INTEGER
       },
       createdAt: {
